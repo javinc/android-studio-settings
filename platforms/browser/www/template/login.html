@@ -1,0 +1,36 @@
+<ion-content class="login-container">
+	<form method="post" ng-submit="login($event)" class="list list-inset login-form">
+
+		<img src="img/login-icon.png" />
+		<!-- <h1>FLUTTERTEXT</h1> -->
+		<!-- <p>
+			Dont have an account?
+			<a ng-click="redirectSignup()" onclick="navigator.app.loadUrl('{{siteUrl}}/signup', { openExternal:true });">
+				Signup here
+			</a>
+		</p> -->
+
+		<p>Please use your fluttertext.com account details</p>
+
+		<label class="item item-input host">
+			<input type="text" name="host" placeholder="host" value="{{apiUrl ? apiUrl : 'http://sms.fluttertext.com'}}">
+		</label>
+
+		<label class="item item-input">
+			<input type="email" name="email" placeholder="email">
+		</label>
+
+		<label class="item item-input">
+			<input type="password" name="password" placeholder="password">
+		</label>
+
+		<label class="item item-input">
+			<input type="number" name="number" placeholder="mobile number">
+		</label>
+
+		<!-- quick fix for multiple popup on siminfo -->
+		<ul class="errors hide"></ul>
+
+		<input type="submit" value="Sign In" class="button button-block button-calm">
+	</form>
+</ion-content>

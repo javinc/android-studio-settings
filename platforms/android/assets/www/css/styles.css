@@ -1,0 +1,66 @@
+
+/* GLOBAL
+------------------------- */
+.hide { display: none !important; }
+.pull-left { float: left; }
+.pull-right { float: right; }
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+/* BACKDROP
+------------------------- */
+body > .load-backdrop {
+	align-items: center;
+	-webkit-align-items: center;
+	background-color: #1A1A1A;
+	color: #fff;
+	display: flex;
+	display: -webkit-flex;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+}
+body > .load-backdrop .text { margin: 0 auto; text-align: center; }
+body > .load-backdrop .text h2 { color: #fff; }
+
+/* MENU
+------------------------- */
+.side-menu .menu-list ion-item { font-size: 13px; }
+.side-menu .menu-list ion-item i { font-size: 25px; }
+
+/* HEADER
+------------------------- */
+.bar-header .title { font-weight: 600 !important; }
+.bar-header .button { font-size: 14px !important; }
+
+/* LOGIN
+------------------------- */
+.login-container { text-align: center; }
+.login-container form { margin-top: 70px; }
+.login-container form h1 { margin-bottom: 5px; }
+.login-container form p { margin-bottom: 20px; }
+.login-container form .host { display: none; }
+.login-container form input[type="submit"] { margin-top: 20px; }
+
+/* HOME
+------------------------- */
+.home-container .card p,
+.home-container .list li { font-size: 14px; }
+.home-container .list li .item-note { text-transform: uppercase; }
+.home-container .list li .item-note[data-status="on"] { color: #33CD5F; }
+.home-container .list li .item-note[data-status="off"] { color: #EF473A; }
+
+/* LOGS
+------------------------- */
+.logs-container .logs-list ion-item { font-size: 13px; }
+.logs-container .logs-list ion-item .status { margin-bottom: 5px; }
+.logs-container .logs-list ion-item .status .error { color: #a94442; }
+.logs-container .logs-list ion-item .status .done { color: #3c763d; }
+.logs-container .logs-list ion-item.no-logs { display: block; }
+.logs-container .logs-list ion-item + ion-item.no-logs { display: none; }

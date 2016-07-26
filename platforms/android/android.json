@@ -1,0 +1,275 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"SMS\"><param name=\"android-package\" value=\"com.dileepindia.cordova.sms.SMSPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Sms\"><param name=\"android-package\" value=\"com.cordova.plugins.sms.Sms\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BackgroundMode\"><param name=\"android-package\" value=\"de.appplant.cordova.plugin.background.BackgroundMode\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"KeepRunning\" value=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Sim\"><param name=\"android-package\" value=\"com.pbakondy.Sim\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BackgroundServicePlugin\"><param name=\"android-package\" value=\"com.red_folder.phonegap.plugin.backgroundservice.BackgroundServicePlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"PowerManagement\"><param name=\"android-package\" value=\"org.apache.cordova.powermanagement.PowerManagement\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.telephony\" android:required=\"false\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.RECEIVE_SMS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.RECEIVE_WAP_PUSH\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.RECEIVE_MMS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_SMS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_SMS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.SEND_SMS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WAKE_LOCK\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.SEND_SMS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.telephony\" android:required=\"false\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<service android:name=\"de.appplant.cordova.plugin.background.ForegroundService\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:name=\"com.red_folder.phonegap.plugin.backgroundservice.BootReceiver\"><intent-filter><action android:name=\"android.intent.action.BOOT_COMPLETED\" /></intent-filter></receiver>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com-dileepindia-cordova-sms": {
+            "PACKAGE_NAME": "fluttertext.mobile"
+        },
+        "com.cordova.plugins.sms": {
+            "PACKAGE_NAME": "fluttertext.mobile"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "fluttertext.mobile"
+        },
+        "cordova-plugin-background-mode": {
+            "PACKAGE_NAME": "fluttertext.mobile"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "fluttertext.mobile"
+        },
+        "cordova-plugin-sim": {
+            "PACKAGE_NAME": "fluttertext.mobile"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "fluttertext.mobile"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "fluttertext.mobile"
+        },
+        "org.apache.cordova.console": {
+            "PACKAGE_NAME": "fluttertext.mobile"
+        },
+        "org.apache.cordova.network-information": {
+            "PACKAGE_NAME": "fluttertext.mobile"
+        },
+        "com.red_folder.phonegap.plugin.backgroundservice": {
+            "PACKAGE_NAME": "fluttertext.mobile"
+        },
+        "at.gofg.sportscomputer.powermanagement": {
+            "PACKAGE_NAME": "fluttertext.mobile"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/com-dileepindia-cordova-sms/www/SMS.js",
+            "id": "com-dileepindia-cordova-sms.SMS",
+            "clobbers": [
+                "window.SMS"
+            ]
+        },
+        {
+            "file": "plugins/com.cordova.plugins.sms/www/sms.js",
+            "id": "com.cordova.plugins.sms.Sms",
+            "clobbers": [
+                "window.sms"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-device/www/device.js",
+            "id": "cordova-plugin-device.device",
+            "clobbers": [
+                "device"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-background-mode/www/background-mode.js",
+            "id": "cordova-plugin-background-mode.BackgroundMode",
+            "clobbers": [
+                "cordova.plugins.backgroundMode",
+                "plugin.backgroundMode"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+            "id": "cordova-plugin-inappbrowser.inappbrowser",
+            "clobbers": [
+                "cordova.InAppBrowser.open",
+                "window.open"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-sim/www/sim.js",
+            "id": "cordova-plugin-sim.Sim",
+            "clobbers": [
+                "window.plugins.sim"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+            "id": "cordova-plugin-splashscreen.SplashScreen",
+            "clobbers": [
+                "navigator.splashscreen"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+            "id": "cordova-plugin-whitelist.whitelist",
+            "runs": true
+        },
+        {
+            "file": "plugins/org.apache.cordova.network-information/www/network.js",
+            "id": "org.apache.cordova.network-information.network",
+            "clobbers": [
+                "navigator.connection",
+                "navigator.network.connection"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.network-information/www/Connection.js",
+            "id": "org.apache.cordova.network-information.Connection",
+            "clobbers": [
+                "Connection"
+            ]
+        },
+        {
+            "file": "plugins/com.red_folder.phonegap.plugin.backgroundservice/www/backgroundService.js",
+            "id": "com.red_folder.phonegap.plugin.backgroundservice.BackgroundService"
+        },
+        {
+            "file": "plugins/at.gofg.sportscomputer.powermanagement/www/powermanagement.js",
+            "id": "at.gofg.sportscomputer.powermanagement.device",
+            "clobbers": [
+                "window.powerManagement"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "com-dileepindia-cordova-sms": "1.0.1",
+        "com.cordova.plugins.sms": "0.1.6",
+        "cordova-plugin-device": "1.0.2-dev",
+        "cordova-plugin-background-mode": "0.6.5",
+        "cordova-plugin-inappbrowser": "1.4.0",
+        "cordova-plugin-sim": "1.2.0",
+        "cordova-plugin-splashscreen": "3.1.0",
+        "cordova-plugin-whitelist": "1.2.1",
+        "org.apache.cordova.console": "0.2.13",
+        "org.apache.cordova.network-information": "0.2.15",
+        "com.red_folder.phonegap.plugin.backgroundservice": "2.0.0",
+        "at.gofg.sportscomputer.powermanagement": "1.1.0"
+    }
+}
